@@ -1,0 +1,259 @@
+.favourites-page {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.favourites-page__topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favourites-page__back {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #d9dee4;
+  background: #fff;
+}
+
+.favourites-page__topbar h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.favourites-page__tabs {
+  display: flex;
+  gap: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.favourites-page__tab {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 8px 0 10px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.favourites-page__tab.is-active {
+  color: #111827;
+}
+
+.favourites-page__tab.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  border-radius: 999px;
+  background: #16a34a;
+}
+
+.favourites-page__smart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.favourites-page__smart article {
+  background: #fff;
+  border-radius: 14px;
+  padding: 11px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.favourites-page__smart strong {
+  display: block;
+}
+
+.favourites-page__smart p {
+  margin: 3px 0 0;
+  color: #6b7280;
+  font-size: 0.84rem;
+}
+
+.favourites-page__list {
+  display: grid;
+  gap: 10px;
+}
+
+.favourites-page__dish-card,
+.favourites-page__kitchen-card {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.favourites-page__dish-card img,
+.favourites-page__kitchen-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favourites-page__dish-body,
+.favourites-page__kitchen-body {
+  padding: 10px 10px 10px 0;
+  display: grid;
+  gap: 6px;
+}
+
+.favourites-page__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.favourites-page__row h3 {
+  margin: 0;
+  font-size: 0.97rem;
+}
+
+.favourites-page__heart {
+  border: none;
+  background: transparent;
+}
+
+.favourites-page__dish-body p,
+.favourites-page__kitchen-body p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.84rem;
+}
+
+.favourites-page__meta {
+  display: flex;
+  gap: 10px;
+  color: #1f2937;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.favourites-page__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.favourites-page__primary {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.favourites-page__primary:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.favourites-page__ghost {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background: #fff;
+  color: #111827;
+  font-weight: 600;
+}
+
+.favourites-page__empty {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.favourites-page__empty-ill {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #ecfdf3;
+  position: relative;
+}
+
+.favourites-page__empty-ill span {
+  position: absolute;
+  border-radius: 50%;
+  background: #16a34a;
+}
+
+.favourites-page__empty-ill span:nth-child(1) {
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  left: 18px;
+  opacity: 0.4;
+}
+
+.favourites-page__empty-ill span:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  top: 30px;
+  left: 38px;
+  opacity: 0.58;
+}
+
+.favourites-page__empty-ill span:nth-child(3) {
+  width: 9px;
+  height: 9px;
+  top: 23px;
+  left: 49px;
+  opacity: 0.75;
+}
+
+.favourites-page__empty h3 {
+  margin: 0;
+}
+
+.favourites-page__empty p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.favourites-page__empty button {
+  border: none;
+  border-radius: 10px;
+  padding: 9px 14px;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .favourites-page__smart {
+    grid-template-columns: 1fr;
+  }
+
+  .favourites-page__dish-card,
+  .favourites-page__kitchen-card {
+    grid-template-columns: 1fr;
+  }
+
+  .favourites-page__dish-body,
+  .favourites-page__kitchen-body {
+    padding: 0 10px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .favourites-page {
+    padding-inline: clamp(16px, 3vw, 40px);
+  }
+}

@@ -1,0 +1,246 @@
+.login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 209, 186, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(120, 192, 162, 0.25), transparent 40%),
+    linear-gradient(180deg, #f8fbf7 0%, #eef6ef 55%, #e1efe4 100%);
+}
+
+.login__card {
+  width: min(420px, 92vw);
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 26px 22px 30px;
+  box-shadow: 0 28px 70px rgba(23, 40, 29, 0.2);
+  display: grid;
+  gap: 18px;
+  text-align: left;
+}
+
+.login__header h2 {
+  margin: 4px 0 6px;
+  font-size: 1.5rem;
+  color: #1a2e24;
+}
+
+.login__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #5f786b;
+}
+
+.login__sub {
+  color: #5a6d63;
+  margin-bottom: 2px;
+}
+
+.login__form {
+  display: grid;
+  gap: 12px;
+}
+
+.login__label {
+  font-size: 0.85rem;
+  color: #516158;
+  font-weight: 600;
+}
+
+.login__form input {
+  padding: 12px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #f2f6f2;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.login__actions {
+  display: grid;
+  gap: 10px;
+}
+
+.login__action {
+  width: 100%;
+  height: 46px;
+  border-radius: 999px;
+  background: #4f7c5b;
+  color: #fff;
+  border: none;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 14px 28px rgba(23, 40, 29, 0.2);
+  cursor: pointer;
+}
+
+.login__ghost {
+  border: none;
+  background: transparent;
+  color: #4f7c5b;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 4px;
+  text-align: left;
+}
+
+.login__error {
+  color: #b23b3b;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.login__switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #516158;
+}
+
+.login__switch input {
+  width: 16px;
+  height: 16px;
+  accent-color: #4f7c5b;
+}
+
+.login__otp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.login__otp-hint {
+  font-size: 0.8rem;
+  color: #7a8a81;
+}
+
+.login__ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login__role-page {
+  display: grid;
+  gap: 14px;
+  text-align: center;
+}
+
+.login__role-kicker {
+  letter-spacing: 0.3em;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #4f7c5b;
+}
+
+.login__role-sub {
+  color: #6b7c74;
+  font-size: 0.9rem;
+}
+
+.login__role-stack {
+  display: grid;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.login__role-card {
+  border-radius: 22px;
+  padding: 18px;
+  text-align: left;
+  display: grid;
+  gap: 8px;
+  box-shadow: 0 18px 40px rgba(23, 40, 29, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login__role-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(23, 40, 29, 0.16);
+}
+
+.login__role-card:focus-visible {
+  outline: 2px solid rgba(79, 124, 91, 0.4);
+  outline-offset: 2px;
+}
+.login__role-card--light {
+  background: #ffffff;
+}
+
+.login__role-card--dark {
+  background: #0b1116;
+  color: #fff;
+}
+
+.login__role-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #8a9a92;
+  font-weight: 700;
+}
+
+.login__role-card--dark .login__role-label {
+  color: #9fb3a8;
+}
+
+.login__role-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.login__role-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7c74;
+}
+
+.login__role-card--dark p {
+  color: #c3d0c8;
+}
+
+.login__role-cta {
+  border: none;
+  background: #0b1116;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width: max-content;
+}
+
+.login__role-cta--dark {
+  background: #ffffff;
+  color: #0b1116;
+}
+
+.login__role-back {
+  border: none;
+  background: transparent;
+  color: #6b7c74;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .login {
+    padding: 16px;
+  }
+
+  .login__card {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 16px 24px;
+  }
+}

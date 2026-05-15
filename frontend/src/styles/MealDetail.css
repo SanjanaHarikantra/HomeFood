@@ -1,0 +1,36 @@
+﻿.meal-detail-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.meal-detail-main {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 260px 1fr;
+}
+
+.meal-detail-main__image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.meal-detail-main__content {
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+@media (max-width: 1200px) {
+  .meal-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .meal-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

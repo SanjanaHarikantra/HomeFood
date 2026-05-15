@@ -1,0 +1,102 @@
+.subscriptions-page {
+  display: grid;
+  gap: 34px;
+}
+
+.subscriptions-hero {
+  display: grid;
+  gap: 14px;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 26px 20px 4px;
+}
+
+.subscriptions-hero__pill {
+  justify-self: center;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b1a0f;
+}
+
+.subscriptions-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  color: #1b241d;
+  line-height: 1.1;
+}
+
+.subscriptions-hero h1 span {
+  display: block;
+  color: #4f7c5b;
+}
+
+.subscriptions-hero p {
+  color: rgba(27, 36, 29, 0.78);
+  font-weight: 500;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.subscriptions-grid {
+  margin-top: 10px;
+  gap: 18px;
+}
+
+.subscriptions-faq {
+  display: grid;
+  gap: 18px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.subscriptions-faq h2 {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #1b241d;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(79, 124, 91, 0.12);
+  color: #1b241d;
+  font-weight: 600;
+  position: relative;
+  box-shadow: 0 12px 26px rgba(18, 28, 21, 0.08);
+}
+
+.faq-item::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4f7c5b;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .subscriptions-grid {
+    gap: 18px;
+  }
+
+  .subscriptions-hero {
+    padding: 20px 0 0;
+  }
+}

@@ -1,0 +1,110 @@
+.budget-meal {
+  display: grid;
+  gap: 16px;
+}
+
+.budget-meal__top {
+  display: grid;
+  gap: 8px;
+}
+
+.budget-meal__ranges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.budget-meal__controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.budget-meal__controls select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.budget-meal__list {
+  display: grid;
+  gap: 12px;
+}
+
+.budget-meal__card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.budget-meal__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.budget-meal__body {
+  padding: 12px 12px 12px 0;
+  display: grid;
+  gap: 6px;
+}
+
+.budget-meal__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.budget-meal__price {
+  font-weight: 800;
+  color: #10b981;
+  font-size: 1.05rem;
+}
+
+.budget-meal__restaurant {
+  color: #6b7c74;
+}
+
+.budget-meal__meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #6b7c74;
+  font-size: 0.85rem;
+}
+
+.budget-meal__tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.budget-meal__tags span {
+  background: #eaf4ec;
+  color: #1a2e24;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+
+.budget-meal__empty {
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .budget-meal__card {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-meal__body {
+    padding: 0 12px 12px;
+  }
+}

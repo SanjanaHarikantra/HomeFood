@@ -1,0 +1,223 @@
+.open-24 {
+  display: grid;
+  gap: 18px;
+}
+
+.open-24__hero {
+  display: grid;
+  place-items: center;
+}
+
+.open-24__hero-card {
+  width: min(360px, 92vw);
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  display: grid;
+  gap: 10px;
+}
+
+.open-24__hero-card h2 {
+  font-size: 1.25rem;
+  color: #111;
+}
+
+.open-24__hero-card p {
+  color: #5a5a5a;
+  font-size: 0.9rem;
+}
+
+.open-24__back {
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: #0e0e0e;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.open-24__header {
+  display: grid;
+  gap: 12px;
+}
+
+.open-24__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+}
+
+.open-24__header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.open-24__header p {
+  color: #5a5a5a;
+  font-size: 0.9rem;
+}
+
+.open-24__toggle {
+  display: inline-flex;
+  background: #f1f4f1;
+  border-radius: 999px;
+  padding: 4px;
+  gap: 6px;
+  width: fit-content;
+}
+
+.open-24__tab {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #274033;
+}
+
+.open-24__tab.is-active {
+  background: #1f8a4c;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(31, 138, 76, 0.35);
+}
+
+.open-24__sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: #274033;
+  font-weight: 700;
+}
+
+.open-24__chip {
+  border: 1px solid rgba(39, 64, 51, 0.2);
+  background: #fff;
+  color: #274033;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.open-24__chip.is-active {
+  background: #1f2a24;
+  color: #fff;
+  border-color: transparent;
+}
+
+.open-24__list {
+  display: grid;
+  gap: 12px;
+}
+
+.open-24__card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.open-24__media {
+  position: relative;
+  height: 100%;
+}
+
+.open-24__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.open-24__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.open-24__body {
+  padding: 12px 12px 12px 0;
+  display: grid;
+  gap: 6px;
+}
+
+.open-24__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.open-24__row h4 {
+  font-size: 1rem;
+}
+
+.open-24__rating {
+  color: #0f8247;
+  font-weight: 700;
+}
+
+.open-24__cuisine {
+  color: #506356;
+  font-size: 0.9rem;
+}
+
+.open-24__meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #6b7c74;
+}
+
+.open-24__status {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.open-24__status.is-open {
+  color: #15803d;
+}
+
+.open-24__status.is-all {
+  color: #0f6b3a;
+}
+
+.open-24__status.is-soon {
+  color: #b45309;
+}
+
+.open-24__empty {
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  color: #6b7c74;
+}
+
+@media (max-width: 600px) {
+  .open-24__controls {
+    justify-content: flex-start;
+  }
+
+  .open-24__card {
+    grid-template-columns: 1fr;
+  }
+
+  .open-24__body {
+    padding: 0 12px 12px;
+  }
+}

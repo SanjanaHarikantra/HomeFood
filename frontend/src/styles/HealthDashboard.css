@@ -1,0 +1,38 @@
+﻿.health {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.health__stats {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.health__graph {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: end;
+  gap: 10px;
+  position: relative;
+  min-height: 200px;
+}
+
+.health__graph .bar {
+  width: 26px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  box-shadow: 0 10px 20px rgba(242, 140, 40, 0.3);
+}
+
+.health__graph .badge {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}

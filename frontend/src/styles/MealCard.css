@@ -1,0 +1,38 @@
+﻿.meal-card {
+  overflow: hidden;
+  display: grid;
+  gap: 12px;
+  background: #f4e0b8;
+  border-radius: 18px;
+}
+
+.meal-card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.meal-card__body {
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.meal-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meal-card .btn {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.badge-dark {
+  background: #000;
+  color: #fff;
+}

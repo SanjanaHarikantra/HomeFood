@@ -1,0 +1,173 @@
+.chef-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: linear-gradient(90deg, #4e7554 0%, #6e9374 50%, #4f7556 100%);
+  color: #f2f7f3;
+  box-shadow: 0 10px 24px rgba(11, 18, 14, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chef-navbar__content {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 56px;
+  padding: 8px 20px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.chef-navbar__brand {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.chef-navbar__logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  flex: 0 0 auto;
+}
+
+.chef-navbar__brand-text {
+  display: grid;
+  line-height: 1;
+}
+
+.chef-navbar__brand-text strong {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: #122118;
+}
+
+.chef-navbar__brand-text span {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(18, 33, 24, 0.7);
+}
+
+.chef-navbar__tabs {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  min-width: 0;
+}
+
+.chef-navbar__tab {
+  position: relative;
+  color: rgba(242, 247, 243, 0.95);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 8px 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.chef-navbar__tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  height: 2px;
+  border-radius: 999px;
+  background: transparent;
+  transform: scaleX(0.2);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.chef-navbar__tab:hover {
+  transform: translateY(-1px);
+}
+
+.chef-navbar__tab.is-active::after {
+  background: rgba(255, 255, 255, 0.95);
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.chef-navbar__actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.chef-navbar__logout {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.84rem;
+  color: #122118;
+  background: #eef4ea;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .chef-navbar__content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .chef-navbar__brand,
+  .chef-navbar__actions {
+    justify-self: stretch;
+  }
+
+  .chef-navbar__tabs {
+    justify-self: stretch;
+  }
+
+  .chef-navbar__tabs {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .chef-navbar__actions {
+    width: 100%;
+  }
+
+  .chef-navbar__logout {
+    width: 100%;
+  }
+
+  .chef-navbar__brand-text span {
+    font-size: 0.64rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .chef-navbar__content {
+    padding: 8px 12px;
+  }
+
+  .chef-navbar__tabs {
+    gap: 14px;
+  }
+
+  .chef-navbar__tab {
+    font-size: 0.84rem;
+  }
+}

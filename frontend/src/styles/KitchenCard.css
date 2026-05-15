@@ -1,0 +1,22 @@
+﻿.kitchen-card {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 140px 1fr;
+}
+
+.kitchen-card img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.kitchen-card__body {
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid rgba(0,0,0,0.06);
+}

@@ -1,0 +1,114 @@
+﻿.hero {
+  padding-top: 80px;
+}
+
+.hero-search-shell {
+  margin-bottom: 18px;
+}
+
+.hero-search-one {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(680px, 92%);
+  background: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  border-radius: 999px;
+  padding: 14px 20px;
+}
+
+.hero-search-one input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1.05rem;
+  color: #4e4e4e;
+}
+
+.search-icon {
+  font-size: 1.1rem;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.hero__text h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin: 12px 0 16px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.hero__media {
+  display: grid;
+  gap: 18px;
+}
+
+.tiffin-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.tiffin-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.tiffin-overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.delivery-card {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 243, 209, 0.7));
+}
+
+.scooter {
+  font-size: 2.4rem;
+  animation: scooter 2.4s ease-in-out infinite;
+}
+
+@keyframes scooter {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    display: none;
+  }
+
+  .hero-search-one {
+    width: 100%;
+  }
+}
